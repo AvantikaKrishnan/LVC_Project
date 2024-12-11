@@ -1,0 +1,274 @@
+body {
+    background-color: white;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+}
+
+.menu {
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #b7b7a4;
+    border-radius: 15px;
+    list-style-type: none;
+    margin-top: 0;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+
+
+h1{
+    animation: slight-bounce 2s infinite;
+
+}
+
+@keyframes slight-bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+
+.menu:hover {
+    background-color: #f0f0f0;
+    box-shadow: 2px 2px #888888;
+    animation: list 1s;
+}
+
+
+@keyframes list {
+    0%, 100% {
+        transform: translateY(0);
+      }
+      30% {
+        transform: translateY(-5px);
+      }
+      50% {
+        transform: translateY(5px);
+      }
+    
+}
+
+.content-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 500px;  
+    gap: 5%;
+}
+
+.Main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+.Main h1 {
+    font-size: 4rem;
+    color: #333;
+    margin-bottom: 5px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    gap: 3%;
+}
+
+.Main p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+.video-container {
+    flex: 1;
+    max-width: 35%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.index-Main {
+    text-align: center;
+    height: 25vh;
+
+}
+.section {
+    background-color: #aec3b0;
+    width: 100%;
+    padding: 25px 0px 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+}
+
+iframe {
+    width: 90%;
+    border: 2px solid grey;
+    border: none;
+    border-radius: 20px;
+}
+
+.frame {
+    width: 100%;
+    padding-bottom: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.active {
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    
+}
+
+p {
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.list {
+    position: relative;
+    padding: 0 10% 0 10%;
+    font-family: "Bree Serif", serif;
+    font-weight: 200;
+    font-style: normal;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+
+
+.list a:hover {
+    color: #f0f0f0;
+}
+
+
+.footer {
+    width: 100%;
+    padding: 25px 0px 25px;
+    background-color: #b7b7a4;
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+}
+
+.footer p{
+    animation: typing 4s steps(10);
+}
+
+
+
+from {
+    width: 0;
+  }
+  to {
+    width: 22ch;
+  }
+
+@media screen and (max-width: 669px) {
+
+    .frame{
+        margin-top: 20%;
+    }
+
+    
+    .content-container {
+        flex-direction: column;
+        align-items: center; 
+        padding: 10px; 
+        margin-bottom:20%;
+    }
+
+    .Main {
+        flex: none;
+         width: 100%; 
+        text-align: center; 
+        margin-top: 35%;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .active {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    .index-Main {
+        text-align: center;
+        height: 15vh;
+    }
+
+    .video-container {
+        flex: none;
+        width: 100%; 
+        max-width: 100%; 
+      
+    }
+
+    video {
+        width: 100%; 
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+
+    .content-container {
+        gap: 10px; 
+        margin-bottom: 40%;
+    }
+
+    .frame {
+        margin-top: 30px; 
+    }
+}
