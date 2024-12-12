@@ -1,0 +1,23 @@
+body {
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+/* .home-Main h1{
+    background-color: #ccdbdc;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+    color: #333;
+} */
+
+.home-Main{
+    background-color: #ccdbdc;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+    color: #333;
+    margin-bottom: 5%;
+}
+

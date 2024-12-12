@@ -28,11 +28,13 @@ body {
     background-color: #ccdbdc;
     text-align: center;
     
+    
 }
 
 h1 {
     padding-bottom: 20%;
     color: #333;
+    text-shadow: 2px 2px grey;
 }
 
 ul {

@@ -9,6 +9,7 @@ img {
     max-height: 350px;
 }
 
+
 .menu {
     padding: 20px;
     border-radius: 15px;
@@ -80,6 +81,8 @@ h1{
     justify-content: center;
     height: 500px;  
     gap: 5%;
+
+   
 }
 
 .Main {
@@ -138,7 +141,7 @@ h1{
 }
 
 iframe {
-    width: 90%;
+    width: 100%;
     border: 2px solid grey;
     border: none;
     border-radius: 20px;

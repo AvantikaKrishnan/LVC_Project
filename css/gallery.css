@@ -10,6 +10,7 @@ body {
     padding-bottom: 2%;
     text-align: center;
     color: #333;
+    text-shadow: 2px 2px grey;
     
 }
 
@@ -27,6 +28,10 @@ table {
 tr{
     padding: 2%; 
      
+}
+
+th{
+    color: rgb(105, 156, 172);
 }
 
 th,td{
@@ -58,6 +63,9 @@ td{
     padding: 2% ;
     text-align: center; vertical-align: middle
     
+}
+a:hover{
+    color: rgb(105, 156, 172);
 }
 
 a{
