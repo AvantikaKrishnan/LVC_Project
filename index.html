@@ -9,6 +9,11 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <script src="js/bootstrap.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Dancing+Script:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Pacifico&display=swap" rel="stylesheet">
@@ -20,21 +25,77 @@
 </head>
     <body>
 
-        <div class="container">
-        <img src="images/Designer1.png" alt="Description of the image">
+        <div class="image-container">
+            <img src="images/test2.png" class="img-fluid image" alt="Responsive image">
+            <div class="middle">
+                <div class="text">Live Virtual Class</div>
+            </div>
         </div>
-     
-        <header>
-                <ul class="nav-menu">
-                    <a href="home.html" target="frm1"><li class="menu"><i class="fa fa-home" aria-hidden="true"></i> Home</li></a>
-                    <a href="all_courses.html" target="frm1"><li class="menu"><i class="fa-solid fa-book"></i> All Courses</li></a>
-                    <a href="registration.html" target="frm1"><li class="menu"><i class="fa-solid fa-registered"></i> Registration</li></a>
-                    <a href="photo_gallery.html" target="frm1"><li class="menu"><i class="fa-solid fa-image"></i> Photo Gallery</li></a>
-                    <a href="blog.html" target="frm1"><li class="menu"><i class="fa-solid fa-blog"></i> Blog</li></a>
-                    <a href="help.html" target="frm1"><li class="menu"><i class="fa fa-question-circle" aria-hidden="true"></i> Help</li></a>
-                    <a href="contact_us.html" target="frm1"><li class="menu"><i class='fas fa-phone-volume'></i> Contact Us</li></a>
+    
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav d-flex justify-content-between w-100">
+                  <li class="nav-item menu">
+                    <a class="nav-link" href="home.html" target="frm1"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+                  </li>
+          
+                  <li class="nav-item menu">
+                    <a class="nav-link" href="blog.html" target="frm1"><i class="fa-solid fa-blog"></i> Blog</a>
+                  </li>
+
+                  <li class="nav-item menu">
+                    <a class="nav-link" href="photo_gallery.html" target="frm1"><i class="fa-solid fa-image"></i> Gallery</a>
+                  </li>
+
+                  <li class="nav-item menu">
+                    <a class="nav-link" href="blog.html" target="frm1"><i class="fa-solid fa-registered"></i> Registration</a>
+                  </li>
+          
+                  <li class="nav-item dropdown menu">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fa-solid fa-book"></i> All Courses
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#" id="submenuDropdown">More Courses</a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="submenuDropdown">
+                          <li><a class="dropdown-item" href="#">Course 1</a></li>
+                          <li><a class="dropdown-item" href="#">Course 2</a></li>
+                          <li><a class="dropdown-item" href="#">Course 3</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+          
+                  <li class="nav-item menu">
+                    <a class="nav-link" href="contact_us.html" target="frm1"><i class='fas fa-phone-volume'></i> Contact Us</a>
+                  </li>
+          
+                  <li class="nav-item menu">
+                    <a class="nav-link" href="help.html" target="frm1"><i class="fa fa-question-circle" aria-hidden="true"></i> Help</a>
+                  </li>
                 </ul>
-        </header>
+              </div>
+            </div>
+          </nav>
+          
+          <script>
+            document.querySelectorAll('.dropdown-submenu').forEach(function (submenu) {
+              submenu.addEventListener('click', function (e) {
+                e.stopPropagation();
+                submenu.querySelector('.dropdown-menu').classList.toggle('show');
+              });
+            });
+          </script>
+          
+          
         <div class="page">
         <div class="content-container">
             <div class="Main">
@@ -58,19 +119,30 @@
 </div>
 </div>
 
-    <div class="section">
-        <p>Important courses for professionals:</p>
-        <ul class="active">
-            <li class="list"><a href="mern.html" target="frm1">MERN</a></li>
-            <li class="list"><a href="mean.html" target="frm1">MEAN</a></li>
-            <li class="list"><a href="angular.html" target="frm1">Angular</a></li>
-        </ul>  
+<div class="section mt-5">
+    <p>Important courses for professionals:</p>
+    <div class="d-flex flex-wrap">
+      <div class="card m-2" style="width: 20rem;">
+        <img src="images/Designer2.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente nostrum id officiis, voluptas facilis voluptate excepturi incidunt praesentium</p>
+        </div>
+      </div>
+      <div class="card m-2" style="width: 20rem;">
+        <img src="images/Designer2.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores architecto laboriosam saepe? Officia enim labore ipsam amet aperiam consequuntur maiores</p>
+        </div>
+      </div>
+      <div class="card m-2" style="width: 20rem;">
+        <img src="images/gen_ai.png" class="card-img-top" alt="Card image">
+        <div class="card-body">
+          <h5 class="card-title">Card Title</h5>
+          <p class="card-text">Some quick example text to build on the ccontainerard title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary mt-auto">Go somewhere</a>
+        </div>
+      </div>
     </div>
-        <div class="footer">
-        <footer>
-            <p>This website is designed and developed by: Avantika Krishnan</p>
-        </footer>
-    </div>
-
+  </div>
     </body>
 </html>

@@ -5,7 +5,7 @@ body {
 }
 
 .Registration-Main{
-    background-color: #ccdbdc;
+    background-color: #62D3A6;
     padding-top: 2%;
     padding-bottom: 2%;
     text-align: center;
@@ -31,7 +31,7 @@ body {
     width: 70%;
     display: flex;
     flex-direction: column;
-    color: rgb(105, 156, 172);
+    color: #62D3A6
   
 }
 
@@ -65,7 +65,8 @@ body {
     padding: 10px 20px;
     width: auto;
     cursor: pointer;
-    background-color: #eef4ed;
+    background-color: #62D3A6;
+    color: black;
 }
 
 

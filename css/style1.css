@@ -1,21 +1,76 @@
 body {
-    background-color: white;
     margin: 0;
 }
 
-img {
+.image-container {
+    position: relative;
+    width: 100%;
+    display: inline-block; 
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: 0.2s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.image-container:hover .image {
+    opacity: 0.3; 
+  
+}
+
+.image-container:hover .middle {
+    opacity: 1; 
+    
+}
+
+.text {
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+    border-radius: 20px;
+}
+
+.card {
+    height: 300px; /* Adjust the height as needed */
+    transition: transform 0.3s;
+  }
+  .card:hover {
+    transform: scale(1.05);
+  }
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .card-text {
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+/* img {
     width: 100%;
     height: auto;
     max-height: 350px;
-}
+} */
 
 
-.menu {
-    padding: 20px;
-    border-radius: 15px;
-}
-
-.nav-menu {
+/* .nav-menu {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -29,7 +84,9 @@ img {
     font-weight: 400;
     font-style: normal;
     
-}
+} */
+
+
 
 
 a {
@@ -55,8 +112,9 @@ h1{
 
 
 .menu:hover {
-    background-color: #f0f0f0;
+    background-color: grey;
     box-shadow: 2px 2px #888888;
+    border-radius: 5px;
     animation: list 1s;
 }
 
@@ -81,8 +139,6 @@ h1{
     justify-content: center;
     height: 500px;  
     gap: 5%;
-
-   
 }
 
 .Main {
@@ -126,11 +182,11 @@ h1{
 
 }
 .section {
-    background-color: #aec3b0;
+    background-color: #62D3A6;
     width: 100%;
     padding: 25px 0px 25px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     
 }
@@ -193,26 +249,14 @@ p {
 .footer {
     width: 100%;
     padding: 25px 0px 25px;
-    background-color: #b7b7a4;
+    background-color: #212529;
     font-family: "Bree Serif", serif;
     font-weight: 400;
     font-style: normal;
     display: flex;
     justify-content: center;
+    color: white;
 }
-
-.footer p{
-    animation: typing 4s steps(10);
-}
-
-
-
-from {
-    width: 0;
-  }
-  to {
-    width: 22ch;
-  }
 
 @media screen and (max-width: 669px) {
 
@@ -233,11 +277,6 @@ from {
          width: 100%; 
         text-align: center; 
         margin-top: 35%;
-    }
-
-    .nav-menu {
-        display: flex;
-        flex-direction: column;
     }
 
     .active {
