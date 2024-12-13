@@ -46,21 +46,21 @@ body {
 }
 
 .card {
-    height: 300px; /* Adjust the height as needed */
-    transition: transform 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: none;
   }
+
   .card:hover {
-    transform: scale(1.05);
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   }
+
+  .card-img-top {
+    border-radius: 10px;
+  }
+
   .card-body {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-  }
-  .card-text {
-    flex-grow: 1;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    text-align: center;
   }
 
 /* img {
@@ -182,7 +182,7 @@ h1{
 
 }
 .section {
-    background-color: #62D3A6;
+    background-color: #26c787;
     width: 100%;
     padding: 25px 0px 25px;
     display: flex;
