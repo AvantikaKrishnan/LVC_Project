@@ -25,13 +25,65 @@
 </head>
     <body>
 
-        <div class="image-container">
-            <img src="images/test2.png" class="img-fluid image" alt="Responsive image">
+        <!-- <div class="image-container">
+            <img src="images/tt.png" class="img-fluid image" alt="Responsive image">
             <div class="middle">
                 <div class="text">Live Virtual Class</div>
             </div>
         </div>
-    
+     -->
+
+     <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <!-- Carousel Items -->
+      <div class="carousel-inner">
+          <!-- First Slide -->
+          <div class="carousel-item active">
+              <div class="image-container">
+                  <img src="images/tt2.png" class="d-block w-100 img-fluid image" alt="Responsive image">
+                  <div class="middle">
+                      <div class="text">Live Virtual Class</div>
+                  </div>
+              </div>
+          </div>
+          <!-- Second Slide -->
+          <div class="carousel-item">
+              <div class="image-container">
+                  <img src="images/tt.png" class="d-block w-100 img-fluid image" alt="Responsive image">
+                  <div class="middle">
+                      <div class="text">Experience Learning Like Never Before</div>
+                  </div>
+              </div>
+          </div>
+     
+
+      <div class="carousel-item">
+        <div class="image-container">
+            <img src="images/tt3.png" class="d-block w-100 img-fluid image" alt="Responsive image">
+            <div class="middle">
+                <div class="text">Step Into the Future of Education</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+      </button>
+
+  </div>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -94,27 +146,10 @@
               });
             });
           </script>
-          
-          
-        <div class="page">
-        <div class="content-container">
-            <div class="Main">
-                <h1>About</h1>
-                <p>A virtual class is an online learning environment where students 
-                    and teachers connect in real-time through video conferencing and 
-                    other digital tools. <br>
-                    It replicates a traditional classroom, allowing
-                    for interaction, discussions, and access to educational materials from any location. 
-                    Virtual classes provide flexibility and convenience, making learning accessible to a wider audience. </p>
-                    
-            </div>
-                <video  class ="video-container"width="250px" height="299px" controls autoplay>
-                    <source src="assets/video/Interactive_Virtual_Learning_Classes.mp4" type="video/mp4">
-                  </video>
-        </div>
+        
         <div class="main-container">
         <div class="frame">
-        <iframe name="frm1" width="600" height="500" ></iframe>
+        <iframe name="frm1" src="home.html" width="600" height="500" ></iframe>
     </div>
 </div>
 </div>
@@ -124,7 +159,7 @@
       <h2 class="mb-4">Important courses for professionals</h2>
       <div class="row justify-content-center g-3">
        
-        <div class="col-md-3">
+        <div class="col-md-2">
           <div class="card h-80">
             <img src="images/angular.png" class="card-img-top" alt="Card Image 1">
             <div class="card-body">
@@ -134,7 +169,7 @@
           </div>
         </div>
       
-        <div class="col-md-3">
+        <div class="col-md-2">
           <div class="card h-80">
             <img src="images/webdev.png" class="card-img-top" alt="Card Image 2">
             <div class="card-body">
@@ -144,7 +179,7 @@
           </div>
         </div>
      
-        <div class="col-md-3">
+        <div class="col-md-2">
           <div class="card h-80">
             <img src="images/gen_ai.png" class="card-img-top" alt="Card Image 3">
             <div class="card-body">
@@ -153,6 +188,17 @@
             </div>
           </div>
         </div>
+
+        <div class="col-md-2">
+          <div class="card h-80">
+            <img src="images/flutter.png" class="card-img-top" alt="Card Image 1">
+            <div class="card-body">
+              <h6 class="card-title">Flutter</h6>
+              <p class="card-text">Short description for card 4.</p>
+            </div>
+          </div>
+        </div>
+        
       </div>
     </div>
   </section>

@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background-color: #f1fde1;
 }
 
 .image-container {
@@ -15,6 +16,7 @@ body {
     height: auto;
     transition: 0.2s ease;
     backface-visibility: hidden;
+    max-height: 350px;
 }
 
 .middle {
@@ -132,50 +134,6 @@ h1{
     
 }
 
-.content-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    height: 500px;  
-    gap: 5%;
-}
-
-.Main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 40%;
-}
-
-.Main h1 {
-    font-size: 4rem;
-    color: #333;
-    margin-bottom: 5px;
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    gap: 3%;
-}
-
-.Main p {
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.4;
-    text-align: justify;
-}
-
-.video-container {
-    flex: 1;
-    max-width: 35%;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-}
-
 .index-Main {
     text-align: center;
     height: 25vh;
@@ -183,19 +141,34 @@ h1{
 }
 .section {
     background-color: #26c787;
-    width: 100%;
-    padding: 25px 0px 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    min-width: 300px;
+    font-family: 'Arial', sans-serif;
+    padding-bottom: 2px;;
     
 }
 
 .main-container {
     display: flex;
     flex-direction: row;
+    background-color: #f1fde1;
 }
 
+
+.carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+        }
+
+       
+        .carousel {
+            scroll-behavior: smooth;
+        }
+
+     
+     
 iframe {
     width: 100%;
     border: 2px solid grey;
@@ -220,11 +193,7 @@ iframe {
     
 }
 
-p {
-    font-family: "Bree Serif", serif;
-    font-weight: 400;
-    font-style: normal;
-}
+
 
 
 .list {
