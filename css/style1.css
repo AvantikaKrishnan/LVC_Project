@@ -48,46 +48,50 @@ body {
 }
 
 .card {
+    position: relative;
     transition: transform 0.3s, box-shadow 0.3s;
     border: none;
-  }
+    overflow: hidden; /* Prevents any overflow */
+    border-radius: 10px; /* Rounded corners for the cards */
+}
 
-  .card:hover {
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Ensures the image covers the entire card */
+    border-radius: 10px; /* Rounded corners for the image */
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 10; /* Ensures the text appears on top of the image */
+    
+}
+
+.card:hover .middle {
+    opacity: 1; /* Shows the text when hovering */
+   
+}
+
+.text {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+    border-radius: 20px;
+}
+
+.card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  }
-
-  .card-img-top {
-    border-radius: 10px;
-  }
-
-  .card-body {
-    text-align: center;
-  }
-
-/* img {
-    width: 100%;
-    height: auto;
-    max-height: 350px;
-} */
-
-
-/* .nav-menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #b7b7a4;
-    border-radius: 15px;
-    list-style-type: none;
-    margin-top: 0;
-    font-family: "Lora", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
     
-} */
-
+}
 
 
 
