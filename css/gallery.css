@@ -1,129 +1,55 @@
-body {
+.photo-gallery {
+    color: #313437;
     background-color: #f1fde1;
-    font-family: 'Arial', sans-serif;
-    margin: 0;
 }
 
-.gallery-Main {
+.photo-gallery p {
+    color: #7d8285;
+}
+
+.gallery-Main{
     background-color: #61C888;
     padding-top: 2%;
     padding-bottom: 2%;
     text-align: center;
     color: #333;
     text-shadow: 2px 2px grey;
-    
+    margin-bottom: 5%;
+}
+.photo-gallery h2 {
+    font-weight: bold;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    color: inherit;
 }
 
-.table{
-    color: red;
+.img-fluid {
+    width: clamp(280px,80vw,600px) !important;
+    height: auto !important;
 }
 
-/* table {
-    width: 60%; 
-    margin-left: auto;  
-    margin-right: auto;  
-    margin-top: 5%;
-    border-collapse: collapse; 
-    border: 2px solid #ced4da; 
-    border-radius: 10px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-}
-
-tr{
-    padding: 2%; 
-     
-}
-
-th{
-    color: rgb(105, 156, 172);
-}
-
-th,td{
-    
-    border: 1px solid #ddd;
-}
-
-img{
-    filter: blur(2px);
-}
-
-tr:hover img{
-    filter: blur(0px);
-  }
-
-tbody tr:nth-child(odd) {
-    background-color: #f2f2f2; 
-}
-
-tbody tr:nth-child(even) {
-    background-color: #ffffff; 
-}
-
-tbody tr:hover {
-    background-color: #e0e0e0;
-}
-
-td{
-    padding: 2% ;
-    text-align: center; vertical-align: middle
-    
-} */
-/* a:hover{
-    color: rgb(105, 156, 172);
-}
-
-a{
-    color: black;
-    text-decoration: none;
-} */
-
-@media screen and (max-width: 274px) {
-
-    .contact-Main {
-        padding-bottom: 2%;
+@media (max-width:767px) {
+    .photo-gallery h2 {
+        margin-bottom: 25px;
+        padding-top: 25px;
+        font-size: 34px;
     }
-
-    h1 {
-        font-size: 16px;
-    }
-    
-
-    table {
-        width: 90%;  
-        font-size: small;
-    }
-
-    iframe {
-        width: 80px; 
-    }
-
-    h1 {
-        font-size: 10px; 
-
-    }
-
 }
 
-@media screen and (max-width: 168px) {
+.photo-gallery .intro {
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto 40px;
+}
 
-    table{
-        width:100% ;
-    }
+.photo-gallery .intro p {
+    margin-bottom: 0;
+}
 
-    iframe {
-        width: 60px; 
-        height: 60px; 
-    }
+.photo-gallery .photos {
+    padding-bottom: 20px;
+}
 
-    h1 {
-        font-size: 14px; 
-    }
-
-    tr{
-        padding: 1%;  
-    }
-    td{
-        padding: 1% ;
-    }
-
+.photo-gallery .item {
+    padding-bottom: 30px;
 }

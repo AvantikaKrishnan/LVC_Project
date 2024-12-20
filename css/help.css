@@ -1,0 +1,35 @@
+
+        body {
+            background-color: #f1fde1;
+           
+        }
+
+        .header{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .header p{
+            font-family: "Oswald", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+            font-size: xx-large;
+            gap: 3%;
+            margin: 2%;
+        }
+        .help-section {
+            margin: 30px;
+        }
+        .help-column {
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            background-color: #f1fde1;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+  
