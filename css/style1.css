@@ -1,4 +1,5 @@
 body {
+    height: 100%;
     margin: 0;
     background-color: #f1fde1;
 }
@@ -16,7 +17,7 @@ body {
     height: auto;
     transition: 0.2s ease;
     backface-visibility: hidden;
-    max-height: 350px;
+    max-height: 400px;
 }
 
 .middle {
@@ -107,6 +108,8 @@ h1{
 
 }
 
+
+
 @keyframes slight-bounce {
     0%, 100% {
       transform: translateY(0);
@@ -143,13 +146,6 @@ h1{
     height: 25vh;
 
 }
-.section {
-    background-color: #26c787;
-    min-width: 300px;
-    font-family: 'Arial', sans-serif;
-    padding-bottom: 2px;;
-    
-}
 
 .main-container {
     display: flex;
@@ -170,9 +166,6 @@ h1{
         .carousel {
             scroll-behavior: smooth;
         }
-
-     
-     
 iframe {
     width: 100%;
     border: 2px solid grey;
@@ -182,7 +175,6 @@ iframe {
 
 .frame {
     width: 100%;
-    padding-bottom: 6%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -217,19 +209,6 @@ iframe {
 
 .list a:hover {
     color: #f0f0f0;
-}
-
-
-.footer {
-    width: 100%;
-    padding: 25px 0px 25px;
-    background-color: #212529;
-    font-family: "Bree Serif", serif;
-    font-weight: 400;
-    font-style: normal;
-    display: flex;
-    justify-content: center;
-    color: white;
 }
 
 @media screen and (max-width: 669px) {
