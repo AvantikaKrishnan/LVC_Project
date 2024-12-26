@@ -38,7 +38,7 @@ function validate()
     var name = frm1.name.value;
     var email = frm1.email.value;
     var gender = frm1.r1.value;
-    var hobbies = getchecked("chk1");
+    // var hobbies = getchecked("chk1");
 
  
 
@@ -57,11 +57,11 @@ function validate()
         return false;
 
     }
-    else if(hobbies == ""){
-        alert("Please choose hobbies");
-        return false;
+    // else if(hobbies == ""){
+    //     alert("Please choose hobbies");
+    //     return false;
 
-    }
+    // }
     else{
         alert("Success");
         return true;
