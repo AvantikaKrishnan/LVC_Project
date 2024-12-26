@@ -40,8 +40,6 @@ function validate()
     var gender = frm1.r1.value;
     // var hobbies = getchecked("chk1");
 
- 
-
     if(name == "")
     {
         alert("Please enter name");
@@ -66,23 +64,21 @@ function validate()
         alert("Success");
         return true;
     }
-
-   
 }
 
-getchecked(field)
-{
-    let result = [];
-    var h = document.getElementsByName(field);
-    for( let i=0;i<h.length;i++)
-    {
-        if(h[i].checked)
-        {
-            result.push(h[i].value);
-        }
+// getchecked(field)
+// {
+//     let result = [];
+//     var h = document.getElementsByName(field);
+//     for( let i=0;i<h.length;i++)
+//     {
+//         if(h[i].checked)
+//         {
+//             result.push(h[i].value);
+//         }
        
-    }
-    return result;
+//     }
+//     return result;
 
 
-}
+// }
