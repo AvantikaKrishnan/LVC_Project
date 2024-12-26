@@ -1,65 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head> 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Live Virtual Class</title>
-        <link rel="stylesheet" href="css/registration.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Virtual Class</title>
+    <link rel="stylesheet" href="css/registration.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <div class="Registration-Main">
-            <h1>REGISTRATION</h1>
-        </div>
+    <script src="js/jvalid1.js"></script>
+</head>
 
-        <article name="frm1">
-            <form method relative="post" class="frm1">
-                
-                <div class="rg-frm">
-               <label class="h"> Name: </label>
-                <input type="text" class="text1" placeholder="Enter your name">
+<body>
+
+    <div class="Registration-Main">
+        <h1>REGISTRATION</h1>
+    </div>
+
+    <article name="frm1">
+        <form name="frm1" class="frm1" onsubmit="return validate()" action="thankyou.html">
+
+            <div class="rg-frm">
+                <label class="h"> Name: </label>
+                <input type="text" class="text1" placeholder="Enter your name" name="name">
 
                 <label class="h"> Email: </label>
-                <input type="email" class="text1" placeholder="Enter your email">
+                <input type="email" class="text1" placeholder="Enter your email" name="email">
             </div>
 
-             <div class="rg-frm">
+            <div class="rg-frm">
                 <label class="h"> Gender: </label>
-                <label > Male:<input type="radio" name="r1"></label>
-                <label > Female:<input type="radio" name="r1"></label>
-                </div>
+                <label> Male:<input type="radio" name="r1"></label>
+                <label> Female:<input type="radio" name="r1"></label>
+            </div>
 
-                <div class="rg-frm">
+            <div class="rg-frm">
                 <label class="h"> Select Course:</label>
                 <select name="s1" class="text1">
                     <option value="1">Python</option>
                     <option value="2">Java</option>
                     <option value="3">Angular</option>
                 </select>
-                </div>
+            </div>
 
-                <div class="rg-frm">
+            <div class="rg-frm">
                 <label class="h">Your hobbies:</label>
                 <label>Music:<input type="checkbox" name="chk1"></label>
                 <label>Singing:<input type="checkbox" name="chk1"></label>
                 <label>Reading:<input type="checkbox" name="chk1"></label>
-                </div>
+            </div>
 
-                <div class="rg-frm">
-               <label class="h"> Remarks:</label>
+            <div class="rg-frm">
+                <label class="h"> Remarks:</label>
 
-                <textarea name="tx" class = "h" rows="5" cols="5"></textarea>
-                </div>
+                <textarea name="tx" class="h" rows="5" cols="5"></textarea>
+            </div>
 
-                <div class="rg-btn">
+            <div class="rg-btn">
                 <input type="submit" class="btn">
             </div>
-                
-            </form>
-        </article>
 
-    
-    </body>
+
+        </form>
+    </article>
+
+
+</body>
+
 </html>
