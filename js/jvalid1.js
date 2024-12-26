@@ -82,3 +82,27 @@ function validate()
 
 
 // }
+
+function validatecontact()
+{
+    // alert.log("hello")
+    var name = frm1.name.value;
+    var email = frm1.email.value;
+ 
+    // var hobbies = getchecked("chk1");
+
+    if(name == "")
+    {
+        alert("Please enter name");
+        return false;
+    }
+    else if(email == "")
+    {
+        alert("Please enter email");
+        return false;
+    }
+    else{
+        alert("Success");
+        return true;
+    }
+}
