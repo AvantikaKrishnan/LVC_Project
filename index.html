@@ -15,9 +15,21 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Bree+Serif&family=Dancing+Script:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Pacifico&display=swap" rel="stylesheet">
+<script>
+  function subscribe()
+  {
+    let mail = prompt("Subscribe to LVC!");
+    console.log(mail);
+    if(!mail)
+    alert("No issues! Feel free to look through our website");
+    else
+    alert("Thank you for subscribing : "+mail);
 
+
+  }
+</script>
 </head>
-    <body>
+    <body onload="return subscribe()">
 
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
