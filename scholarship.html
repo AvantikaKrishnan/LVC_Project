@@ -4,11 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Live Virtual Class</title>
-        <link rel="stylesheet" href="css/registration.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
         <link rel ="stylesheet" href="css/scholarship.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script src="js/jvalid1.js"></script>
-        <link rel="stylesheet" href="css/bootstrap.css">
+        
        
     </head>
     <body onload="window.open('conditions.html', 'Conditions','width=900,height=900')">
@@ -16,60 +16,61 @@
         <div class="Scholarship-Main">
             <h1>Scholarship</h1>
         </div>
-        
-<div class="form d-flex justify-content-center">
-    <form class="" onsubmit="return validate()" >
-        <div class="form-group">
-          <label for="exampleInputEmail1">Name</label>
-          <input name="name" type="text" class="form-control border border-success"  id="name" aria-describedby="emailHelp" placeholder="Enter name">
+        <!-- <div class="d-flex justify-content-center mt-5 "> -->
+          <div class="form-container mt-5 ">
+          <div class="form" style="width: 80%;">
+            <form class ="ml-5 p-4" style="width: 80%; " onsubmit="return validate()" >
+              <div class="form-group">
+                <label for="exampleInputEmail1">Name</label>
+          <input name="name" type="text" class="form-control border"  id="name" aria-describedby="emailHelp" placeholder="Enter name">
         </div>
         <div class="form-group">
           <label for="exampleInputPassword1">Email</label>
-          <input name="email" type="email" class="form-control border border-success" id="email" placeholder="Enter Email">
+          <input name="email" type="email" class="form-control border " id="email" placeholder="Enter Email">
           <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
-
-
         
         <strong><label class="mt-4" for="exampleInputEmail1">Marks</label></strong>
-
+        
         <div class="form-group mt-2">
-            <label for="exampleInputEmail1">Computer</label>
-            <input name="computer" type="number" class="form-control border border-success" id="computer" aria-describedby="emailHelp" placeholder="Enter computer marks">
-          </div>
-
-          <div class="form-group">
-            <label for="exampleInputEmail1">Mathematics</label>
-            <input name="maths" type="number" class="form-control border border-success" id="maths" aria-describedby="emailHelp" placeholder="Enter maths marks">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Science</label>
-            <input name="science" type="number" class="form-control border border-success" id="science" aria-describedby="emailHelp" placeholder="Enter science marks">
-          </div>
-          <div class="form-group">
+          <label for="exampleInputEmail1">Computer</label>
+          <input name="computer" type="number" class="form-control border" id="computer" aria-describedby="emailHelp" placeholder="Enter computer marks">
+        </div>
+        
+        <div class="form-group">
+          <label for="exampleInputEmail1">Mathematics</label>
+          <input name="maths" type="number" class="form-control border" id="maths" aria-describedby="emailHelp" placeholder="Enter maths marks">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Science</label>
+          <input name="science" type="number" class="form-control border " id="science" aria-describedby="emailHelp" placeholder="Enter science marks">
+        </div>
+        <div class="form-group">
             <label for="exampleInputEmail1">English</label>
-            <input name="english" type="number" class="form-control border border-success" id="english" aria-describedby="emailHelp" placeholder="Enter english marks">
+            <input name="english" type="number" class="form-control border" id="english" aria-describedby="emailHelp" placeholder="Enter english marks">
           </div>
-     
-
-        <label for="exampleInputEmail1">Select 10% range:</label>
-
-        <select id = "marks_ten" class="form-control marks_ten border border-success">
+          
+          
+          <label for="exampleInputEmail1">Select 10% range:</label>
+          
+          <select id = "marks_ten" class="form-control marks_ten border">
             <option value="1">90-100</option>
             <option value="2">80-100</option>
             <option value="3">lesser than 80</option>
           </select>
           
-        <button type="submit" class="btn btn-primary ">Submit</button>
+          <button type="submit" class="btn btn-primary">Submit</button>
         </div>
-       
-        </form>
-        <div id="message" class="text-center p-5"></div>
+        
+      </form>
+      </div>
+    </div>
+      <div id="message" class="text-center p-5"></div>
     </div> 
-      
-
-
-    </body>
-
-
+    
+    
+    
+  </body>
+  
+  
 </html>
