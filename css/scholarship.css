@@ -1,0 +1,23 @@
+body{
+    width: 100%;
+}
+
+
+.Scholarship-Main{
+    background-color:  #90d1bf;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+    color: #333;
+    text-shadow: 2px 2px grey;
+}
+
+
+
+
+input {
+    padding: 5px 5px 5px 15px;
+    font-size: 120%;
+    
+ 
+}
