@@ -66,8 +66,10 @@ body {
     width: auto;
     cursor: pointer;
     background-color: #62D3A6;
-    color: black;
+      color: black;
 }
+
+
 
 
 @media screen and (max-width: 768px) {

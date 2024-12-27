@@ -45,3 +45,7 @@ input {
 input{
     border-color:  rgb(131, 194, 194);
 }
+
+.errordiv{
+    color: red;
+}
