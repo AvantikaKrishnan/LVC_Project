@@ -17,7 +17,7 @@ body {
     height: auto;
     transition: 0.2s ease;
     backface-visibility: hidden;
-    max-height: 400px;
+    max-height: 490px;
 }
 
 .middle {
@@ -253,6 +253,25 @@ iframe {
     video {
         width: 100%; 
     }
+}
+
+.search-form{
+    margin: 20px 0;
+}
+
+.search-form input[type="text"] {
+    width: 250px;
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+.search-form select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
 }
 
 
