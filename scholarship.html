@@ -1,150 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scholarship Form</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        .errordiv {
-            color: red;
-            font-size: 0.9em;
-            margin-top: 5px;
-        }
-        .border-success {
-            border: 2px solid green;
-        }
-        .border-danger {
-            border: 2px solid red;
-        }
-    </style>
-</head>
-<body>
-    <div class="container mt-5">
-        <h1 class="text-center">Scholarship Form</h1>
-        <form id="scholarshipForm" class="m-auto p-4" style="width: 75%;" onsubmit="return validate()">
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Live Virtual Class</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel ="stylesheet" href="css/scholarship.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="js/jvalid1.js"></script>
+        
+       
+    </head>
+    <body onload="window.open('conditions.html', 'Conditions','width=900,height=900')">
+
+        <div class="Scholarship-Main">
+            <h1>Scholarship</h1>
+        </div>
+        <!-- <div class="d-flex justify-content-center mt-5 "> -->
+        
+          <div class="form mt-5" >
+            <form class ="m-auto p-4" style="width: 75%; " onsubmit="return validate()" >
+
             <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" class="form-control m-1" onfocus="clearError('name')" onblur="checkInput('name')" placeholder="Enter name">
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" class="form-control m-1" onfocus="clearError('email')" onblur="checkInput('email')" placeholder="Enter email">
-            </div>
-            <strong class="mt-4">Marks</strong>
-            <div class="form-group mt-2">
-                <label for="computer">Computer</label>
-                <input type="number" id="computer" name="computer" class="form-control m-1" onfocus="clearError('computer')" onblur="checkInput('computer')" placeholder="Enter computer marks">
-            </div>
-            <div class="form-group">
-                <label for="maths">Mathematics</label>
-                <input type="number" id="maths" name="maths" class="form-control m-1" onfocus="clearError('maths')" onblur="checkInput('maths')" placeholder="Enter maths marks">
-            </div>
-            <div class="form-group">
-                <label for="science">Science</label>
-                <input type="number" id="science" name="science" class="form-control m-1" onfocus="clearError('science')" onblur="checkInput('science')" placeholder="Enter science marks">
-            </div>
-            <div class="form-group">
-                <label for="english">English</label>
-                <input type="number" id="english" name="english" class="form-control m-1" onfocus="clearError('english')" onblur="checkInput('english')" placeholder="Enter english marks">
-            </div>
-            <div class="form-group">
-                <label for="marks_ten">Select 10% Range:</label>
-                <select id="marks_ten" class="form-control">
-                    <option value="1">90-100</option>
-                    <option value="2">80-100</option>
-                    <option value="3">Less than 80</option>
-                </select>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-        <div id="message" class="text-center p-5"></div>
-    </div>
+              <label for="exampleInputEmail1">Name</label>
+        <input name="name" type="text" class="form-control border m-1" onblur="check('name')" id="name" aria-describedby="emailHelp" placeholder="Enter name">
+      </div>
 
-    <script>
-        function clearError(field) {
-            const errorDiv = document.getElementById('errordiv' + field);
-            if (errorDiv) {
-                errorDiv.remove();
-            }
-            const input = document.getElementById(field);
-            input.classList.remove('border-danger');
-        }
+        <div class="form-group">
+          <label for="exampleInputPassword1">Email</label>
+          <input name="email" type="email" class="form-control border m-1" onblur="check('email')"  id="email" placeholder="Enter Email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
 
-        function checkInput(field) {
-            const input = document.getElementById(field);
-            const value = input.value.trim();
+        </div>
+        
+        <strong><label class="mt-4" for="exampleInputEmail1">Marks</label></strong>
+        
+        <div class="form-group mt-2">
+          <label for="exampleInputEmail1">Computer</label>
+          <input name="computer" type="number" class="form-control border m-1" onblur="check('computer')" id="computer" aria-describedby="emailHelp" placeholder="Enter computer marks">
+        </div>
+        
+        <div class="form-group">
+          <label for="exampleInputEmail1">Mathematics</label>
+          <input name="maths" type="number" class="form-control border m-1" onblur="check('maths')" id="maths" aria-describedby="emailHelp" placeholder="Enter maths marks">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Science</label>
+          <input name="science" type="number" class="form-control border m-1" onblur="check('science')" id="science" aria-describedby="emailHelp" placeholder="Enter science marks">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">English</label>
+            <input name="english" type="number" class="form-control border m-1"  onblur="check('english')" id="english" aria-describedby="emailHelp" placeholder="Enter english marks">
 
-            if (!value || (field !== 'email' && (value < 0 || value > 100)) || (field === 'email' && !validateEmail(value))) {
-                input.classList.add('border-danger');
-                showError(field, 'Invalid input');
-                return false;
-            }
-            input.classList.remove('border-danger');
-            input.classList.add('border-success');
-            return true;
-        }
-
-        function showError(field, message) {
-            const input = document.getElementById(field);
-            let errorDiv = document.getElementById('errordiv' + field);
-            if (!errorDiv) {
-                errorDiv = document.createElement('div');
-                errorDiv.classList.add('errordiv');
-                errorDiv.id = 'errordiv' + field;
-                input.after(errorDiv);
-            }
-            errorDiv.textContent = message;
-        }
-
-        function validateEmail(email) {
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            return emailRegex.test(email);
-        }
-
-        function validate() {
-            const name = document.getElementById('name').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const computer = parseFloat(document.getElementById('computer').value.trim());
-            const maths = parseFloat(document.getElementById('maths').value.trim());
-            const science = parseFloat(document.getElementById('science').value.trim());
-            const english = parseFloat(document.getElementById('english').value.trim());
-            const tenth = document.getElementById('marks_ten').value;
-
-            let isValid = true;
-            ['name', 'email', 'computer', 'maths', 'science', 'english'].forEach(field => {
-                if (!checkInput(field)) {
-                    isValid = false;
-                }
-            });
-
-            if (!isValid) return false;
-
-            const averageMarks = (computer + maths + science + english) / 4;
-            let message = '';
-
-            if (tenth == '1') {
-                if (averageMarks >= 90) {
-                    message = 'Congratulations! You have received a 50% scholarship.';
-                } else if (averageMarks >= 80) {
-                    message = 'Congratulations! You have received a 25% scholarship.';
-                } else {
-                    message = 'Sorry! You have not received a scholarship.';
-                }
-            } else if (tenth == '2') {
-                if (averageMarks >= 90) {
-                    message = 'Congratulations! You have received a 25% scholarship.';
-                } else {
-                    message = 'Sorry! You have not received a scholarship.';
-                }
-            } else {
-                message = 'Sorry! You have not received a scholarship.';
-            }
-
-            document.getElementById('message').textContent = message;
-            return false;
-        }
-    </script>
-</body>
+          </div>
+          
+          
+          <label for="exampleInputEmail1">Select 10% range:</label>
+          
+          <select id = "marks_ten" class="form-control marks_ten border">
+            <option value="1">90-100</option>
+            <option value="2">80-100</option>
+            <option value="3">lesser than 80</option>
+          </select>
+          
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+        
+      </form>
+      </div>
+    
+      <div id="message" class="text-center p-5"></div>
+    </div> 
+    
+    
+    
+  </body>
+  
+  
 </html>

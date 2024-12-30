@@ -1,9 +1,27 @@
 function validate()
 {  
-    var message = "";
-   
-    var average_tw = (maths+computer+science+english)/4;
 
+
+    var fields = ['name','email','computer','maths','science', 'english'];
+    var b = true;
+    for(i =0;i<fields.length;i++)
+    {
+        b = b && check(fields[i]);   
+    }
+    var message = "";
+    
+    if(b)
+    {
+        var maths = document.getElementById('maths').value;
+        var computer = document.getElementById('computer').value;
+        var science = document.getElementById('science').value;
+        var english = document.getElementById('english').value;
+  
+    var average_tw = (maths+computer+science+english)/4;
+   
+    var tenth = document.getElementById("marks_ten").value;
+
+   
         if(tenth == 1 )
         {
             if(average_tw>=90)
@@ -27,20 +45,27 @@ function validate()
 
         document.getElementById("message").innerHTML = message;
         return false;
+        
+        
     }
+    else{
+        return false;
+        
+    }
+}
    
 
 
-function focushandler(field)
-{
-   document.getElementById('errordiv'+field).remove();
-}
-
 function check(field)
 {
+    if(document.getElementById('errordiv'+field))
+        document.getElementById('errordiv'+field).remove();
+    
    var f = document.getElementById(field);
     if(!f.value | f.value<0 | f.value>100)
     {
+        console.log("check " +f.value);
+        
         f.classList.add("border-danger");
         let errormsg = document.createElement("div");
         errormsg.classList.add("errordiv");
@@ -56,6 +81,10 @@ function check(field)
         return true;
     }
 }
+
+
+
+
 
 
 function validatecontact()
