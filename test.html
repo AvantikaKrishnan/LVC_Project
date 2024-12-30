@@ -178,6 +178,11 @@
                     let score = 0;
                     let totalQuestions = Object.keys(answers).length;
 
+                    let correctAnswersList = Object.entries(answers)
+                    .map(([question, correctAnswer], index) => `Question ${index + 1}: ${correctAnswer}`)
+                    .join("<br>");
+
+
                     Object.keys(answers).forEach(question => {
                         const selectedOption = form[question].value;
                         if (selectedOption === answers[question]) {
@@ -189,7 +194,7 @@
 
                     document.getElementById("quizscore").innerHTML = `You scored ${score} out of ${totalQuestions}.`;
                      document.getElementById("correct_answers").innerHTML = `The following are the correct answers: `;
-                    //  document.getElementById("answers").innerHTML =correctAnswersList;
+                    document.getElementById("answers").innerHTML =correctAnswersList;
 
 
                     const resultModal = new bootstrap.Modal(document.getElementById('resultModal'));
