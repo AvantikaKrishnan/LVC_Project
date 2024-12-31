@@ -238,14 +238,17 @@ window.location.href = url;
                 style="width: 60px; background-color: #7c4dff; height: 2px"
                 />
             <p>
-              Here you can use rows and columns to organize your footer
+            Here you can use rows and columns to organize your footer
               content. Lorem ipsum dolor sit amet, consectetur adipisicing
               elit.
             </p>
 
             <form name="search_form">
+              <p>
+                <strong> Search more about our company:</strong>
+              </p>
               <input tpye="text" name="u_search">
-              <select name="site" size="1">
+              <select class="site" name="site" size="1">
               <option value="http://search.yahoo.com/bin/search?p=">Yahoo</option>
               <option value="http://www.go.com/Titles?qt=">Go.com</option>
               <option value="http://www.goto.com/d/search/?Keywords=">GoTo.com</option>
@@ -258,7 +261,7 @@ window.location.href = url;
               <option value="http://search.aol.com/dirsearch.adp?query=">AOL.com</option>
               <option value="http://search.msn.com/results.asp?q=">MSN.com</option>
               </select>
-              <input type="button" value="Search" onClick="JavaScript:search_site()">
+              <input type="button" class="btn search_btn btn-secondary p-1 m-1" value="Search" onClick="JavaScript:search_site()">
               </form>
           </div>
 

@@ -80,6 +80,18 @@ h1 {
     background-color: #f1fde1;
 }
 
+.search_btn{
+    margin-top: 1px;
+    padding: 0;
+}
+
+.site{
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 2px;
+
+}
+
 
 
 iframe {
@@ -172,3 +184,4 @@ iframe {
         margin-top: 30px; 
     }
 }
+
