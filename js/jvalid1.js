@@ -1,7 +1,5 @@
 function validate()
 {  
-
-
     var fields = ['name','email','computer','maths','science', 'english'];
     var b = true;
     for(i =0;i<fields.length;i++)
@@ -44,8 +42,12 @@ function validate()
         }
 
         document.getElementById("message").innerHTML = message;
-        return false;
-        
+
+       
+        var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
+        myModal.show();
+
+        return false; 
         
     }
     else{
@@ -53,16 +55,86 @@ function validate()
         
     }
 }
+
+function validateregistration()
+{
+    const radioButtons = document.getElementsByName('r1');
+    let selectedValue = null;
+  
+  for (const radio of radioButtons) {
+    if (radio.checked) {
+      selectedValue = radio.value;
+      break;
+    }
+  }
+
+  const checkboxes = document.getElementsByName("chk1");
+  let isChecked = false;
+
+  checkboxes.forEach((checkbox) => {
+    if (checkbox.checked) {
+      isChecked = true;
+    }
+  });
+
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+  const dropdown = document.getElementsByName("s1")[0]; // Get the dropdown element
+  const drop = dropdown.value;
+
+  if(name == "")
+  {
+      alert("Please enter name");
+      return false;
+  }
+  else if(email == "" )
+  {
+      alert("Please enter a valid mail empty");
+      return false;
+  }
+  else if(!emailRegex.test(email)){
+    alert("Please enter a valid mail!");
+    return false;
+
+  }
+  else if(!selectedValue)
+  {
+    alert("Please select gender");
+    return false;
+  }
+  else if(!drop)
+    {
+      alert("Please select a course");
+      return false;
+    }
+  else if(!isChecked)
+  {
+    alert("Please select atleast one hobby");
+    return false;
+  }
+  else{
+
+    alert("success");
+    alert(drop);
+    return false;
+  }
+}
    
-
-
 function check(field)
 {
+
+    console.log("Ff");
+    
+
     if(document.getElementById('errordiv'+field))
         document.getElementById('errordiv'+field).remove();
+
+ 
     
    var f = document.getElementById(field);
-    if(!f.value | f.value<0 | f.value>100)
+    if(!f.value)
     {
         console.log("check " +f.value);
         

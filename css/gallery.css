@@ -1,6 +1,13 @@
+body{
+    margin: 0;
+    padding: 0;
+}
 .photo-gallery {
     color: #313437;
     background-color: #f1fde1;
+    margin: 0;
+    padding: 0;
+  
 }
 
 .photo-gallery p {
@@ -21,6 +28,10 @@
     margin-bottom: 40px;
     padding-top: 40px;
     color: inherit;
+}
+.row{
+    padding: 2%;
+    margin: 0;
 }
 
 .img-fluid {
@@ -44,10 +55,6 @@
 
 .photo-gallery .intro p {
     margin-bottom: 0;
-}
-
-.photo-gallery .photos {
-    padding-bottom: 20px;
 }
 
 .photo-gallery .item {

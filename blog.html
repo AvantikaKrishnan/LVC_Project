@@ -1,33 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head> 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Live Virtual Class</title>
-        <link rel="stylesheet" href="css/blog.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Virtual Class</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
 
+.blog-Main{
+    background-color:  #90d1bf;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+    color: #333;
+    text-shadow: 2px 2px grey;
+}
 
-    </head>
-    <body>
-<div class="page">
-<div class="blog-Main sidebar">
-            <h1>BLOG</h1>
-        <header>
-            <ul class="nav-menu">
-                <li class="menu"><a href="mern.html" target="bfrm"><i class="fa-solid fa-code"></i> MERN Stack</a></li>
-                <li class="menu"><a href="mean.html" target="bfrm"><i class="fa-solid fa-code-branch"></i> Mean Stack</a></li>
-                <li class="menu"><a href="gen_ai.html" target="bfrm"><i class="fa-solid fa-microchip-ai"></i></i> Gen AI</a></li>
-                <li class="menu"><a href="angular.html" target="bfrm"><i class="fa-brands fa-dev"></i></i> Angular</a></li>
-            </ul>
-    </header>
-</div>
+        .row {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 0;
+            margin-bottom: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 100px 
+        }
 
-<div class="content">
+        .col {
+            padding-left: 0;
+            padding-right: 0;
+        }
 
-    <iframe name="bfrm" src = "blog_initial.html" width="100%" height="500" ></iframe>
-</div>
-</div>
+        .card {
+            max-width: 450px;
+            width: 300px;
+            margin: 0 auto;
+            height: 400px;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+            display: flex;
+          
+        }
 
+        .card-body {
+            padding: 0.75rem;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            transform: translateY(100%);
+            transition: transform 0.3s ease-in-out;
+            padding: 20px;
+        }
+
+        .card:hover .card-body {
+            transform: translateY(0);
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-img-top {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        
+
+        /* .container {
+            padding-left: 15px;
+            padding-right: 15px;
+        } */
+
+        @media (max-width: 576px) {
+           
+            .row-cols-1 {
+                row-gap: 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .row{
+                gap:30px;
+            }
+            .row-cols-sm-2 {
+                row-gap: 20px;
+            }
+        }
+
+        @media (max-width: 992px) {
+          
+            .row-cols-md-3 {
+
+                row-gap: 20px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+          
+            .row-cols-lg-4 {
+                row-gap: 20px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="blog-Main">
+        <h1>Blogs</h1>
+    </div>
+
+    <div class="cards">
+        <div class="py-5 px-3">
+            <div class="row row-cols-1 row-cols-md-3 row-cols-lg-6 w-100">
+                <!-- Updated Cards -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/ai.png" class="card-img-top" alt="Artificial Intelligence">
+                        <div class="card-body">
+                            <h5 class="card-title">Artificial Intelligence</h5>
+                            <p class="card-text">Explore the fundamentals of AI and its role in shaping the future.</p>
+                            <a href="gen_ai.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/angular.png" class="card-img-top" alt="Angular Development">
+                        <div class="card-body">
+                            <h5 class="card-title">Angular Development</h5>
+                            <p class="card-text">Learn how to build dynamic web applications using Angular.</p>
+                            <a href="angular.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/vr.png" class="card-img-top" alt="Virtual Reality">
+                        <div class="card-body">
+                            <h5 class="card-title">Virtual Reality</h5>
+                            <p class="card-text">Dive into the immersive world of virtual reality and its applications.</p>
+                            <a href="virtual.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/webdev.png" class="card-img-top" alt="Web Development">
+                        <div class="card-body">
+                            <h5 class="card-title">Web Development</h5>
+                            <p class="card-text">Master the skills to create stunning and responsive websites.</p>
+                            <a href="webdev.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/privacy.png" class="card-img-top" alt="Privacy and Security">
+                        <div class="card-body">
+                            <h5 class="card-title">Privacy and Security</h5>
+                            <p class="card-text">Understand how to protect data and stay secure online.</p>
+                            <a href="privacy.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/development.png" class="card-img-top" alt="Software Development">
+                        <div class="card-body">
+                            <h5 class="card-title">Software Development</h5>
+                            <p class="card-text">Build your programming skills and develop robust applications.</p>
+                            <a href="development.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/cyber.png" class="card-img-top" alt="Cybersecurity">
+                        <div class="card-body">
+                            <h5 class="card-title">Cybersecurity</h5>
+                            <p class="card-text">Learn how to identify and counter cyber threats effectively.</p>
+                            <a href="cybersecurity.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/iot.png" class="card-img-top" alt="Internet of Things">
+                        <div class="card-body">
+                            <h5 class="card-title">Internet of Things</h5>
+                            <p class="card-text">Discover the power of IoT and its impact on everyday life.</p>
+                            <a href="iot.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     </body>
 </html>

@@ -16,6 +16,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Bree+Serif&family=Dancing+Script:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Pacifico&display=swap" rel="stylesheet">
 <script>
+
+
+function search_site()
+{
+var url = document.search_form.site.options[document.search_form.site.selectedIndex].value 
+url = url + document.search_form.u_search.value;
+window.location.href = url;
+}
+
   function subscribe()
   {
     let mail = prompt("Subscribe to LVC!");
@@ -24,24 +33,20 @@
     alert("No issues! Feel free to look through our website");
     else
     alert("Thank you for subscribing : "+mail);
-
-
   }
 
-    function search_site()
-  {
-  // Build the destination url by placing the selection option first
-  var url = document.search_form.site.options[document.search_form.site.selectedIndex].value 
-  // Append the text box input to the search url for the selected site
-  url = url + document.search_form.u_search.value;
-  // Change the the browser location to the new url
-  window.location.href = url;
+
+  function adjustIframeHeight() {
+    const iframe = document.getElementById('contentframe');
+    if (iframe.contentWindow.document.body) {
+      iframe.style.height = iframe.contentWindow.document.body.scrollHeight +30+ 'px';
+    }
   }
 </script>
 </head>
-    <body onload="return subscribe()" >
+    <body >
 
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav class="navbar nav navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -75,7 +80,7 @@
                   <li class="dropdown-submenu">
                     <a class="dropdown-item dropdown-toggle" href="#" id="submenuDropdown">More Courses</a>
                     <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="submenuDropdown">
-                      <li><a class="dropdown-item" href="gen_ai.html" target="frm1">Gen AI</a></li>
+                      <li><a class="dropdown-item" href="mern.html" target="frm1">MERN</a></li>
                       <li><a class="dropdown-item" href="angular.html" target="frm1">Angular</a></li>
                       <li><a class="dropdown-item" href="mean.html" target="frm1">MEAN</a></li>
                     </ul>
@@ -94,57 +99,7 @@
           </div>
         </div>
       </nav>
-     <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-      <!-- Indicators -->
-      <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-
-      <!-- Carousel Items -->
-      <div class="carousel-inner">
-          <!-- First Slide -->
-          <div class="carousel-item active">
-              <div class="image-container">
-                  <img src="images/carousal2.png" class="d-block w-100 img-fluid image" alt="Responsive image">
-                  <div class="middle">
-                      <div class="text">Live Virtual Class</div>
-                  </div>
-              </div>
-          </div>
-          <!-- Second Slide -->
-          <div class="carousel-item">
-              <div class="image-container">
-                  <img src="images/download (1).png" class="d-block w-100 img-fluid image" alt="Responsive image">
-                  <div class="middle">
-                      <div class="text">Experience Learning Like Never Before</div>
-                  </div>
-              </div>
-          </div>
-     
-
-      <div class="carousel-item">
-        <div class="image-container">
-            <img src="images/pp (1).png" class="d-block w-100 img-fluid image" alt="Responsive image">
-            <div class="middle">
-                <div class="text">Step Into the Future of Education</div>
-            </div>
-        </div>
-    </div>
-</div>
-
-      <!-- Controls -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-      </button>
-
-  </div>
+   
       
           
           <script>
@@ -158,7 +113,7 @@
         
         <div class="main-container">
         <div class="frame">
-        <iframe name="frm1" src="home.html" width="600" height="500" ></iframe>
+        <iframe name="frm1" id="contentframe" src="home.html"  onload="adjustIframeHeight()" ></iframe>
     </div>
 </div>
 </div>
@@ -287,24 +242,26 @@
               content. Lorem ipsum dolor sit amet, consectetur adipisicing
               elit.
             </p>
-             <form name="search_form" class="search-form">
-                <input type="text" name="u_search" placeholder="Search...">
-                <select name="site" size="1">
-                    <option value="http://search.yahoo.com/bin/search?p=">Yahoo</option>
-                    <option value="http://www.go.com/Titles?qt=">Go.com</option>
-                    <option value="http://www.goto.com/d/search/?Keywords=">GoTo.com</option>
-                    <option value="http://search.excite.com/search.gw?search=">Excite</option>
-                    <option value="http://www.lycos.com/srch/?query=">Lycos</option>
-                    <option value="http://hotbot.lycos.com/?MT=">HotBot</option>
-                    <option value="http://www.altavista.com/cgi-bin/query?&q=">Alta Vista</option>
-                    <option value="http://www.webcrawler.com/cgi-bin/WebQuery?searchText=">WebCrawler</option>
-                    <option value="http://www.mamma.com/Mamma?&query=">Mamma.com</option>
-                    <option value="http://search.aol.com/dirsearch.adp?query=">AOL.com</option>
-                    <option value="http://search.msn.com/results.asp?q=">MSN.com</option>
-                </select>
-                <input type="button" value="Search" onClick="JavaScript:search_site()">
-            </form>
+
+            <form name="search_form">
+              <input tpye="text" name="u_search">
+              <select name="site" size="1">
+              <option value="http://search.yahoo.com/bin/search?p=">Yahoo</option>
+              <option value="http://www.go.com/Titles?qt=">Go.com</option>
+              <option value="http://www.goto.com/d/search/?Keywords=">GoTo.com</option>
+              <option value="http://search.excite.com/search.gw?search=">Excite</option>
+              <option value="http://www.lycos.com/srch/?query=">Lycos</option>
+              <option value="http://hotbot.lycos.com/?MT=">HotBot</option>
+              <option value="http://www.altavista.com/cgi-bin/query?&q=">Alta Vista</option>
+              <option value="http://www.webcrawler.com/cgi-bin/WebQuery?searchText=">WebCrawler</option>
+              <option value="http://www.mamma.com/Mamma?&query=">Mamma.com</option>
+              <option value="http://search.aol.com/dirsearch.adp?query=">AOL.com</option>
+              <option value="http://search.msn.com/results.asp?q=">MSN.com</option>
+              </select>
+              <input type="button" value="Search" onClick="JavaScript:search_site()">
+              </form>
           </div>
+
     
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
           

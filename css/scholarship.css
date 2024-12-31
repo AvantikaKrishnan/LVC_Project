@@ -49,3 +49,6 @@ input{
 .errordiv{
     color: red;
 }
+.custom-modal{
+    margin-top: 50%;
+}

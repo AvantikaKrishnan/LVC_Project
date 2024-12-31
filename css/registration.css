@@ -18,7 +18,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 7% auto;
+    margin: 2% auto;
     width: 50%;
     background-color: white;
     border-radius:2%;
@@ -27,12 +27,11 @@ body {
 }
 
 .rg-frm {
-    margin: 2%;
     width: 70%;
     display: flex;
     flex-direction: column;
-    color: #62D3A6
-  
+    color: #62D3A6;
+    margin: 1%;
 }
 
 .rg-btn
@@ -55,7 +54,7 @@ body {
     max-width: 400px; 
     height: 30px;
     padding: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 .btn{
@@ -67,6 +66,11 @@ body {
     cursor: pointer;
     background-color: #62D3A6;
       color: black;
+}
+
+.errordiv{
+    color: red;
+    margin-bottom: 5px;
 }
 
 

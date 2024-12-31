@@ -1,10 +1,23 @@
 body{
     background-color: #f1fde1;
-}
+        }
 
-h1 {
-    font-size: 3em;
-    text-align: center;
-    margin-top: 50px;
-    color: #495057;
-}
+    h1 {
+        font-size: 3em;
+        text-align: center;
+        margin-top: 50px;
+        color: #495057;
+    }
+
+    .content{
+        padding: 20px;
+        max-width: 900px;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        margin: 0 auto;
+    }
+
+    h2{
+        color:rgb(106, 175, 106)
+    }
