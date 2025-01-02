@@ -58,14 +58,11 @@ body {
 }
 
 .btn{
-   
     margin-top: 20px;
-    border-radius: 2%;
     padding: 10px 20px;
     width: auto;
     cursor: pointer;
     background-color: #62D3A6;
-      color: black;
 }
 
 .errordiv{

@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: #f1fde1;
 }
 
 
@@ -19,12 +20,12 @@ body{
 
 .gallery-Main{
     background-color: #90d1bf;
-    /* padding-top: 2%;
-    padding-bottom: 2%; */
+    padding-top: 2%;
+    padding-bottom: 2%;
     text-align: center;
     color: #333;
     text-shadow: 2px 2px grey;
-    /* margin-bottom: 5%; */
+    
 }
 .photo-gallery h2 {
     font-weight: bold;
